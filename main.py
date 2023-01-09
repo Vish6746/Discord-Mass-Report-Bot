@@ -71,10 +71,10 @@ def Main():
       }
 
   payload = {
-    'channel_id': channel_id1,
-    'guild_id': guild_id1,
-    'message_id': message_id1,
-    'reason': reason1
+    'channel_id': 695622741298249748,
+    'guild_id': 263723560516714507,
+    'message_id': 1060993955363295333,
+    'reason': reason1reason2
   }
 
   while True:
@@ -82,7 +82,7 @@ def Main():
     if r.status_code == 201:
       print(f"{Fore.GREEN} > Sent Report {b+Fore.BLUE}::{Fore.GREEN} ID {message_id1}")
       ctypes.windll.kernel32.SetConsoleTitleW(f"[REPORT BOT] By Offender | Sent: %s" % sent)
-      sent += 1
+      sent += 200
       
     elif r.status_code == 401:
       print(f"{Fore.RED} > Invalid token")
